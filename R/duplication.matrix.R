@@ -1,4 +1,4 @@
-duplication.matrix <- function( n )
+duplication.matrix <- function( n=1 )
 {
 ###
 ### this function returns a matrix sith n * n rows and n * (n + 1 ) / 2
@@ -7,28 +7,21 @@ duplication.matrix <- function( n )
 ### Parameter
 ### n = the order of the matrix
 ###
-    if ( n <= 0 )
-        stop( "argument n is not positive" )
-    if ( n != trunc( n ) )
-        stop( "argument n is not an integer" )
-    A <- matrix( 0, nrow=n, ncol=n )
-    for ( i in 1:n )
-        for ( j in 1:n )
-            A[i,j] <- i + j
-    vechA <- vech( A )
-    vecA <- vec( A )
-    p <- n * n
-    q <- n * ( n + 1 ) / 2
-    D <- matrix( 0, nrow=p, ncol=q )
-    for ( i in 1:p ) {
-        value.set <- FALSE
-        for ( j in 1:q ) {
-            if ( !value.set ) {
-                D[i,j] <- as.numeric( vecA[i,1] == vechA[j,1] )
-                if ( D[i,j] == 1 )
-                    value.set <- TRUE
-            }    
+    if ( (n<1) |  (round (n) != n) )
+        stop ("n must be a positive integer")
+    d <- matrix (0, n * n, n * (n + 1) / 2)
+
+   ## It is clearly possible to make this a LOT faster!
+   count = 0
+   for (j in 1 : n){
+       d [(j - 1) * n + j, count + j] = 1
+       if ( j < n ) {
+           for (i in (j + 1):n){
+               d [(j - 1) * n + i, count + i] <- 1
+               d [(i - 1) * n + j, count + i] <- 1
+           }
         }
-    }  
-    return( D )
+        count = count + n - j
+    }
+    return( d )
 }

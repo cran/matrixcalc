@@ -6,7 +6,7 @@
   that transforms vech(A) to vec(A) where A is a symmetric n by n matrix.
 }
 \usage{
-duplication.matrix(n)
+duplication.matrix(n=1)
 }
 \arguments{
   \item{n}{ Row and column dimension }
@@ -18,7 +18,7 @@ duplication.matrix(n)
   Magnus, J. R. and H. Neudecker (1999) Matrix Differential Calculus with Applications in Statistics and Econometrics,
   Second Edition, John Wiley.
 }
-\author{ Frederick Novomestky \email{fnovomes@poly.edu} }
+\author{ Frederick Novomestky \email{fnovomes@poly.edu}, Kurt Hornik \email{Kurt.Hornik@wu-wien.ac.at} }
 \note{
   If the argument is less than or equal to zero, the function displays an error message and stops.
   If the argument is not an integer, the function displays an error message and stops.
