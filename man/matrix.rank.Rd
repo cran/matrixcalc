@@ -19,8 +19,8 @@ matrix.rank(x, method = c("qr", "chol"))
   An integer.
 }
 \references{
-  Magnus, J. R. and H. Neudecker (1999) Matrix Differential Calculus with Applications in Statistics and Econometrics,
-  Second Edition, John Wiley.
+  Bellman, R. (1987). \emph{Matrix Analysis}, Second edition, Classics in Applied Mathematics,
+  Society for Industrial and Applied Mathematics.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \note{

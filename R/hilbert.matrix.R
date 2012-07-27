@@ -6,10 +6,10 @@ hilbert.matrix <- function(n)
 ### Parameter
 ### n = the row (column) dimension of the matrix
 ###
-    if ( n <= 0 )
-        stop( "argument n is not positive" )
     if ( n != trunc( n ) )
         stop( "argument n is not an integer" )
+    if ( n < 2 )
+        stop( "argument n is less than 2" )
     i <- 1:n
     X <- 1 / outer(i - 1, i, "+")
     return( X  )

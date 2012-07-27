@@ -21,9 +21,6 @@ shift.left(A, cols = 1, fill = 0)
   If the argument A is not a numeric matrix, then the function presents an error message and stops.
   If the argument cols is not a positive integer, then the function presents an error message and stops.
 }
-\seealso{
-  \code{\link{is.numeric.matrix}}
-}
 \examples{
 A <- matrix( seq( 1, 12, 1 ), nrow=3, byrow=TRUE )
 shift.left( A, 1 )

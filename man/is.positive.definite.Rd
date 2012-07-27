@@ -2,7 +2,7 @@
 \alias{is.positive.definite}
 \title{ Test matrix for positive definiteness }
 \description{
-  This function returns TRUE of the argument, a square matrix x, is positive definite.  The user
+  This function returns TRUE if the argument, a square matrix x, is positive definite.  The user
   chooses between a test of the eigenvalues of x or a Choleski decomposition of x.
 }
 \usage{
@@ -15,14 +15,14 @@ is.positive.definite(x, tol, method = c("eigen", "chol"))
 }
 \details{
   For the eigenvalue approach, the eigenvalues should be positive.  The Choleski decomposition only works
-  for positive definite symmetric matrices.
+  for positive definite symmetric matrices.  The function works only for real valued matrices.
 }
 \value{
   TRUE or FALSE.
 }
 \references{
-  Magnus, J. R. and H. Neudecker (1999) Matrix Differential Calculus with Applications in Statistics and Econometrics,
-  Second Edition, John Wiley.
+  Bellman, R. (1987). \emph{Matrix Analysis}, Second edition, Classics in Applied Mathematics,
+  Society for Industrial and Applied Mathematics.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \examples{

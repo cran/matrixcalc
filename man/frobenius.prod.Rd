@@ -8,8 +8,8 @@
 frobenius.prod(x, y)
 }
 \arguments{
-  \item{x}{ a numeric matrix object }
-  \item{y}{ a numeric matrix object }
+  \item{x}{ a numeric matrix or vector object }
+  \item{y}{ a numeric matrix or vector object }
 }
 \details{
   The Frobenius inner product is the element-by-element sum of the Hadamard or Shur product of two numeric matrices.
@@ -18,12 +18,18 @@ frobenius.prod(x, y)
   A numeric value.
 }
 \references{
-  Magnus, J. R. and H. Neudecker (1999) Matrix Differential Calculus with Applications in Statistics and Econometrics,
-  Second Edition, John Wiley.
+  Styan, G. P. H. (1973). Hadamard Products and Multivariate Statistical Analysis,
+  \emph{Linear Algebra and Its Applications}, Elsevier, 6, 217-240.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \seealso{
 \code{\link{hadamard.prod}}
+}
+\note{
+  The function converts vectors to matrices if necessary.
+  The function stops running if x or y is not numeric and an error message is displayed.
+  The function also stops running if x and y do not have the same row and column dimensions and an error mesage
+  is displayed.
 }
 \examples{
 x <- matrix( c( 1, 2, 3, 4 ), nrow=2, byrow=TRUE )

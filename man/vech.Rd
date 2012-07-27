@@ -12,10 +12,10 @@ vech(x)
   \item{x}{ a matrix }
 }
 \value{
-  A matrix with n * ( n + 1 ) / 2 rows and one column.
+  A matrix with \eqn{\frac{1}{2}n\left( {n + 1} \right)} rows and one column.
 }
 \references{
-  Magnus, J. R. and H. Neudecker (1999) Matrix Differential Calculus with Applications in Statistics and Econometrics,
+  Magnus, J. R. and H. Neudecker (1999) \emph{Matrix Differential Calculus with Applications in Statistics and Econometrics},
   Second Edition, John Wiley.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }

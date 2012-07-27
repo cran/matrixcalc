@@ -9,9 +9,13 @@ set.submatrix <- function( x, y, row, col )
 ### row = an integer row number
 ### col = an integer column number
 ###
-    if ( !is.numeric.matrix( x ) )
+    if ( !is.matrix( x ) )
+        stop( "argument x is not a matrix" )
+    if ( !is.numeric( x ) )
         stop( "argument x is not a numeric matrix" )
-    if ( !is.numeric.matrix( y ) )
+    if ( !is.matrix( y ) )
+        stop( "argument y is not a matrix" )
+    if ( !is.numeric( y ) )
         stop( "argument y is not a numeric matrix" )
     if ( row <= 0 )
         stop( "argument row is not positive" )

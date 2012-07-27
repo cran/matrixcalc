@@ -9,8 +9,12 @@ shift.left <- function( A, cols = 1, fill = 0 )
 ### cols = number of cols to be shifed to the left
 ### fill = a numeric value to be used to fill the cols
 ###
-    if ( !is.numeric.matrix( A ) )
-        stop( "Argument A is not a numeric matrix" )
+    if ( !is.matrix( A ) ) {
+        stop( "argument A is not a matrix" )
+    }
+    if ( !is.numeric( A ) ) {
+        stop( "argument A is not a numeric matrix" )
+    }    
     if ( cols != trunc( cols ) )
         stop( "Arguments cols is not an integer" )
     if ( cols < 0 )

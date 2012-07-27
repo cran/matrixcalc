@@ -10,12 +10,16 @@ hilbert.matrix(n)
 \arguments{
   \item{n}{ Order of the Hilbert matrix }
 }
+\details{
+  A Hilbert matrix is an order \eqn{n} square matrix of unit fractions with elements 
+  defined as \eqn{{H_{i,j}} = \frac{1}{{i + j - 1}}}.
+}
 \value{
   A matrix.
 }
 \references{
-  Magnus, J. R. and H. Neudecker (1999) Matrix Differential Calculus with Applications in Statistics and Econometrics,
-  Second Edition, John Wiley.
+  Hilbert, David (1894). Ein Beitrag zur Theorie des Legendre schen Polynoms,
+  \emph{Acta Mathematica}, Springer, Netherlands, 18, 155-159.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \note{

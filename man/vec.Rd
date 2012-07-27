@@ -11,16 +11,13 @@ vec(x)
   \item{x}{ a matrix }
 }
 \value{
-  A matrix with m * n rows and one column.
+  A matrix with \eqn{m\;n} rows and one column.
 }
 \references{
-  Magnus, J. R. and H. Neudecker (1999) Matrix Differential Calculus with Applications in Statistics and Econometrics,
+  Magnus, J. R. and H. Neudecker (1999) \emph{Matrix Differential Calculus with Applications in Statistics and Econometrics},
   Second Edition, John Wiley.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
-\seealso{
-  \code{\link{is.numeric.matrix}}
-}
 \examples{
 x <- matrix( seq( 1, 16, 1 ), nrow=4, byrow=TRUE )
 vecx <- vec( x )

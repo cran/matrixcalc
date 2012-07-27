@@ -8,12 +8,16 @@
 upper.triangle(x)
 }
 \arguments{
-  \item{x}{ a matris }
+  \item{x}{ a matrix }
 }
 \value{
   A matrix.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
+\references{
+  Bellman, R. (1987). \emph{Matrix Analysis}, Second edition, Classics in Applied Mathematics,
+  Society for Industrial and Applied Mathematics.
+}
 \seealso{
   \code{\link{is.square.matrix}}
 }

@@ -5,8 +5,8 @@ frobenius.prod <- function( x, y )
 ### the matrices must the same row and column order
 ###
 ### Parameters
-### x = a numeric matrix object
-### y = a numeric matrix object
+### x = a numeric matrix or vector object
+### y = a numeric matrix or vector object
 ###
     return( sum( hadamard.prod(x, y) ) )
 }

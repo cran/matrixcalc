@@ -3,7 +3,7 @@
 \title{ Store matrix inside another matrix }
 \description{
   This function returns a matrix which is a copy of matrix x into which the contents of matrix y
-  have been inserted to the right and below the given row and column.
+  have been inserted at the given row and column.
 }
 \usage{
 set.submatrix(x, y, row, col)
@@ -25,9 +25,6 @@ set.submatrix(x, y, row, col)
   If the argument col is not a positive integer, then the function presents an error message and stops.
   If the target row range does not overlap with the row range of argument x, then the function presents an error message and stops.
   If the target col range does not overlap with the col range of argument x, then the function presents an error message and stops.
-}
-\seealso{
-  \code{\link{is.numeric.matrix}}
 }
 \examples{
 x <- matrix( seq( 1, 16, 1 ), nrow=4, byrow=TRUE )

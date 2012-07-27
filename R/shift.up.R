@@ -9,8 +9,12 @@ shift.up <- function( A, rows = 1, fill = 0 )
 ### rows = number of rows to be shifed upwards
 ### fill = a numeric value to be used to fill the rows
 ###
-    if ( !is.numeric.matrix( A ) )
-        stop( "Argument A is not a numeric matrix" )
+    if ( !is.matrix( A ) ) {
+        stop( "argument A is not a matrix" )
+    }
+    if ( !is.numeric( A ) ) {
+        stop( "argument A is not a numeric matrix" )
+    }    
     if ( rows != trunc( rows ) )
         stop( "Arguments rows is not an integer" )
     if ( rows < 0 )

@@ -14,11 +14,13 @@ matrix.trace(x)
   A numeric value which is the sum of the values on the diagonal.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
-\note{
-  If the argument A is not a square matrix, then the function presents an error message and stops.
+\references{
+  Bellman, R. (1987). \emph{Matrix Analysis}, Second edition, Classics in Applied Mathematics,
+  Society for Industrial and Applied Mathematics.
 }
-\seealso{
-  \code{\link{is.numeric.matrix}}
+\note{
+  If the argument x is not numeric, the function presents and error message and terminates.
+  If the argument x is not a square matrix, the function presents an error message and terminates.
 }
 \examples{
 A <- matrix( seq( 1, 16, 1 ), nrow=4, byrow=TRUE )

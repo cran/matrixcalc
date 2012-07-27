@@ -9,8 +9,12 @@ shift.down <- function( A, rows = 1, fill = 0 )
 ### rows = number of rows to be shifed downwards
 ### fill = a numeric value to be used to fill the rows
 ###
-    if ( !is.numeric.matrix( A ) )
-        stop( "Argument A is not a numeric matrix" )
+    if ( !is.matrix( A ) ) {
+        stop( "argument A is not a matrix" )
+    }
+    if ( !is.numeric( A ) ) {
+        stop( "argument A is not a numeric matrix" )
+    }    
     if ( rows < 0 )
         stop( "Argument rows is not positive" )
     if ( rows != trunc( rows ) )
