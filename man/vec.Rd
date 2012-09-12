@@ -20,6 +20,8 @@ vec(x)
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \examples{
 x <- matrix( seq( 1, 16, 1 ), nrow=4, byrow=TRUE )
+print( x )
 vecx <- vec( x )
+print( vecx )
 }
 \keyword{ math }

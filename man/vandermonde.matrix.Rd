@@ -35,5 +35,6 @@ vandermonde.matrix(alpha, n)
 \examples{
 alpha <- c( .1, .2, .3, .4 )
 V <- vandermonde.matrix( alpha, 4 )
+print( V )
 }
 \keyword{ math }

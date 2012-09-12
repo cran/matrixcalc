@@ -21,10 +21,10 @@ maximum.norm(x)
   Bellman, R. (1987). \emph{Matrix Analysis}, Second edition, Classics in Applied Mathematics,
   Society for Industrial and Applied Mathematics.
 
-  Golub, G. and C. F. Van Loan (1996).  \emph{Matrix Computations}, Third Edition, The John
+  Golub, G. H. and C. F. Van Loan (1996).  \emph{Matrix Computations}, Third Edition, The John
   Hopkins University Press.
 
-  Horn, R. and C. Johnson (1985). \emph{Matrix Analysis}, Cambridge University Press.
+  Horn, R. A. and C. R. Johnson (1985). \emph{Matrix Analysis}, Cambridge University Press.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \seealso{
@@ -33,6 +33,6 @@ maximum.norm(x)
 }
 \examples{
 A <- matrix( c( 3, 5, 7, 2, 6, 4, 0, 2, 8 ), nrow=3, ncol=3, byrow=TRUE )
-print( maximum.norm( A ) )
+maximum.norm( A )
 }
 \keyword{ math }

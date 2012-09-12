@@ -1,32 +1,27 @@
-is.positive.definite <- function( x, tol, method = c("eigen","chol" ) )
+is.positive.definite <- function( x, tol=1e-8 )
 {
 ###
-### this function determines if the given matrix is positive definite
+### this function determines if the given real symmetric matrix is positive definite
 ###
 ### parameters
 ### x = a square numeric matrix object
+### tol = tolerance level for zero
 ###
     if ( !is.square.matrix( x ) )
         stop( "argument x is not a square matrix" )
-    method <- match.arg(method)
-    if (method == "eigen") {
-        eval <- eigen(x, only.values = TRUE)$values
-        if( missing(tol) ) {
-            tol <- max(dim(x)) * max( abs(eval) ) *.Machine$double.eps
+    if ( !is.symmetric.matrix( x ) )
+        stop( "argument x is not a symmetric matrix" )
+    if ( !is.numeric( x ) )
+        stop( "argument x is not a numeric matrix" )
+    eigenvalues <- eigen(x, only.values = TRUE)$values
+    n <- nrow( x )
+    for ( i in 1: n ) {
+        if ( abs( eigenvalues[i] ) < tol ) {
+            eigenvalues[i] <- 0
         }
-        if (sum(eval > tol) == length(eval)) {
-            return(TRUE)
-        } else {
-            return(FALSE)
-        }
-    } 
-    else if (method == "chol") {
-        val = try(chol(x), silent = TRUE)
-        if (class(val) == "try-error") {
-            return(FALSE)
-        }
-        else {
-            return(TRUE)  
-        }  
+    }    
+    if ( any( eigenvalues <= 0 ) ) {
+        return( FALSE )
     }
+    return( TRUE )
 }

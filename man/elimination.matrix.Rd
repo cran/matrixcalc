@@ -33,7 +33,9 @@ elimination.matrix(n)
   If the argument is less than two, the function displays an error message and stops.
 }
 \seealso{
-  \code{\link{L.matrix}}
+  \code{\link{E.matrices}},
+  \code{\link{L.matrix}},
+  \code{\link{u.vectors}}
 }
 \examples{
 L <- elimination.matrix( 4 )

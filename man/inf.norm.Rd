@@ -11,8 +11,9 @@ inf.norm(x)
   \item{x}{  a numeric vector or matrix }
 }
 \details{
-  Let \eqn{{\bf{x}}} be an \eqn{m \times} numeric matrix.
-  The formula used to compute the norm is \eqn{\left\| {\bf{x}} \right\|_\infty   = \mathop {\max }\limits_{1 \le i \le m} \sum\limits_{j = 1}^n {\left| {x_{i,j} } \right|} }.
+  Let \eqn{{\bf{x}}} be an \eqn{m \times n} numeric matrix.
+  The formula used to compute the norm is 
+  \eqn{\left\| {\bf{x}} \right\|_\infty   = \mathop {\max }\limits_{1 \le i \le m} \sum\limits_{j = 1}^n {\left| {x_{i,j} } \right|} }.
   This is merely the maximum absolute row sum of the \eqn{m \times n} maxtris.
 }
 \value{
@@ -22,10 +23,10 @@ inf.norm(x)
   Bellman, R. (1987). \emph{Matrix Analysis}, Second edition, Classics in Applied Mathematics,
   Society for Industrial and Applied Mathematics.
 
-  Golub, G. and C. F. Van Loan (1996).  \emph{Matrix Computations}, Third Edition, The John
+  Golub, G. H. and C. F. Van Loan (1996).  \emph{Matrix Computations}, Third Edition, The John
   Hopkins University Press.
 
-  Horn, R. and C. Johnson (1985). \emph{Matrix Analysis}, Cambridge University Press.
+  Horn, R. A. and C. R. Johnson (1985). \emph{Matrix Analysis}, Cambridge University Press.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \seealso{

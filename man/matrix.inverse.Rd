@@ -1,11 +1,11 @@
-\name{inverse}
-\alias{inverse}
+\name{matrix.inverse}
+\alias{matrix.inverse}
 \title{ Inverse of a square matrix }
 \description{
   This function returns the inverse of a square matrix computed using the R function solve.
 }
 \usage{
-inverse(x)
+matrix.inverse(x)
 }
 \arguments{
   \item{x}{ a square numeric matrix }
@@ -20,6 +20,10 @@ inverse(x)
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \examples{
 A <- matrix( c ( 1, 2, 2, 1 ), nrow=2, byrow=TRUE)
-invA <- inverse( A )
+print( A )
+invA <- matrix.inverse( A )
+print( invA )
+print( A \%*\% invA )
+print( invA \%*\% A )
 }
 \keyword{ math }

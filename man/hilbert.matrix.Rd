@@ -12,7 +12,9 @@ hilbert.matrix(n)
 }
 \details{
   A Hilbert matrix is an order \eqn{n} square matrix of unit fractions with elements 
-  defined as \eqn{{H_{i,j}} = \frac{1}{{i + j - 1}}}.
+  defined as \eqn{H_{i,j}  = {1 \mathord{\left/
+ {\vphantom {1 {\left( {i + j - 1} \right)}}} \right.
+ \kern-\nulldelimiterspace} {\left( {i + j - 1} \right)}}}.
 }
 \value{
   A matrix.
@@ -28,5 +30,6 @@ hilbert.matrix(n)
 }
 \examples{
 H <- hilbert.matrix( 4 )
+print( H )
 }
 \keyword{ math }

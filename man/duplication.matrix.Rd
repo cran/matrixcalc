@@ -32,6 +32,7 @@ duplication.matrix(n=1)
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu}, Kurt Hornik \email{Kurt.Hornik@wu-wien.ac.at} }
 \seealso{
+  \code{\link{D.matrix}},
   \code{\link{vec}},
   \code{\link{vech}}
 }

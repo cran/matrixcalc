@@ -24,6 +24,8 @@ vech(x)
 }
 \examples{
 x <- matrix( seq( 1, 16, 1 ), nrow=4, byrow=TRUE )
+print( x )
 y <- vech( x )
+print( y )
 }
 \keyword{ math }

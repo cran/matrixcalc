@@ -25,12 +25,17 @@ svd.inverse <- function( x )
         }
     }
     svdXmat <- svd( Xmat )
-    print( svdXmat )
     U <- svdXmat$u
-    if ( any( svdXmat$d == 0 ) ) {
+    d <- svdXmat$d
+    if ( any( d == 0 ) ) {
         stop( "x has at least one zero singular value" )
     }
-    Dinv <- diag( 1 / svdXmat$d )
+    if ( length( d ) == 1 ) {
+        Dinv <- matrix( 1 / d, nrow=1 )
+    }
+    else {
+        Dinv <- diag( 1 / d )
+    }    
     V <- svdXmat$v
     Xinv <- V %*% Dinv %*% t( U )
     return( Xinv )

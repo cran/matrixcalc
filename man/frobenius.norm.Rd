@@ -12,7 +12,7 @@ frobenius.norm(x)
 }
 \details{
   The formula used to compute the norm is \eqn{\left\| {\bf{x}} \right\|_2}.
-  This is merely the entrywise norm with exponent 2.
+  Note that this is the entrywise norm with exponent 2.
 }
 \value{
   A numeric value.
@@ -21,10 +21,10 @@ frobenius.norm(x)
   Bellman, R. (1987). \emph{Matrix Analysis}, Second edition, Classics in Applied Mathematics,
   Society for Industrial and Applied Mathematics.
 
-  Golub, G. and C. F. Van Loan (1996).  \emph{Matrix Computations}, Third Edition, The John
+  Golub, G. H. and C. F. Van Loan (1996).  \emph{Matrix Computations}, Third Edition, The John
   Hopkins University Press.
 
-  Horn, R. and C. Johnson (1985). \emph{Matrix Analysis}, Cambridge University Press.
+  Horn, R. A. and C. R. Johnson (1985). \emph{Matrix Analysis}, Cambridge University Press.
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \seealso{

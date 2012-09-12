@@ -12,7 +12,10 @@ frobenius.prod(x, y)
   \item{y}{ a numeric matrix or vector object }
 }
 \details{
-  The Frobenius inner product is the element-by-element sum of the Hadamard or Shur product of two numeric matrices.
+  The Frobenius inner product is the element-by-element sum of 
+  the Hadamard or Shur product of two numeric matrices.  Let \eqn{{\bf{x}}} and
+  \eqn{{\bf{y}}} be two \eqn{m \times n} matrices.  Then Frobenious inner product
+  is computed as \eqn{\sum\limits_{i = 1}^m {\sum\limits_{j = 1}^n {x_{i,j} \;y_{i,j} } } }.
 }
 \value{
   A numeric value.
@@ -23,7 +26,7 @@ frobenius.prod(x, y)
 }
 \author{ Frederick Novomestky \email{fnovomes@poly.edu} }
 \seealso{
-\code{\link{hadamard.prod}}
+  \code{\link{hadamard.prod}}
 }
 \note{
   The function converts vectors to matrices if necessary.

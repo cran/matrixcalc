@@ -1,4 +1,4 @@
-inverse <- function( x )
+matrix.inverse <- function( x )
 {
 ###
 ### this function returns the inverse of a square matrix

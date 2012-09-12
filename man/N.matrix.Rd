@@ -36,5 +36,6 @@ N.matrix(n)
 }
 \examples{
 N <- N.matrix( 3 )
+print( N )
 }
 \keyword{ math }

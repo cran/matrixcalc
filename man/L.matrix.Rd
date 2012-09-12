@@ -32,7 +32,9 @@ L.matrix(n)
   If the argument is less than two, the function displays an error message and stops.
 }
 \seealso{
-  \code{\link{elimination.matrix}}
+  \code{\link{elimination.matrix}},
+  \code{\link{E.matrices}},
+  \code{\link{u.vectors}}, 
 }
 \examples{
 L <- L.matrix( 4 )

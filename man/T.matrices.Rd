@@ -40,6 +40,9 @@ T.matrices(n)
 \note{
   The argument n must be an integer value greater than or equal to 2.
 }
+\seealso{
+  \code{\link{E.matrices}}
+}
 \examples{
 T <- T.matrices( 3 )
 }
