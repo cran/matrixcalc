@@ -42,7 +42,7 @@ spectral.norm(x)
   displayed and the function terminates.
 }
 \examples{
-x <- matrix( c( 2, 4, 2, 1, 3, 1, 5, 2, 1, 2, 3, 3 ), nrow=4, ncol=4, byrow=TRUE )
+x <- matrix( c( 2, 4, 2, 1, 3, 1, 5, 2, 1, 2, 3, 3 ), nrow=3, ncol=4, byrow=TRUE )
 spectral.norm( x )
 }
 \keyword{ math }

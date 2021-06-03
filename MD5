@@ -1,4 +1,4 @@
-d9c5fa2301d05f637d491d077fec0faa *DESCRIPTION
+eca564be112951a2c5bb436dc695e532 *DESCRIPTION
 4be87d2e3c549f8c524f6b2eb86399a4 *NAMESPACE
 2c8d8a78f8b955c2f2f586f5bacf3247 *R/D.matrix.R
 c944e010361d98b90fa512d4965c2383 *R/E.matrices.R
@@ -110,7 +110,7 @@ adb798ccbe69962b270f50027708b4da *man/pascal.matrix.Rd
 d81aebc918e739102aba01ef9d443280 *man/shift.left.Rd
 39ddc9ab8e39d20db36f97a6f497f6ef *man/shift.right.Rd
 807b1e1f57e0dbb1004d63197c6b17ce *man/shift.up.Rd
-37a382a887d158676b85faa99695158a *man/spectral.norm.Rd
+68ea4435e2d172de9331e8629c5c7147 *man/spectral.norm.Rd
 a2d7e641d88e593f540a1e119692a033 *man/stirling.matrix.Rd
 8cb1322739b7a8f9dcea2aa75c864e23 *man/svd.inverse.Rd
 795bdbe5f7976766484220afe929b1c1 *man/symmetric.pascal.matrix.Rd
