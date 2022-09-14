@@ -1,6 +1,6 @@
 Package: matrixcalc
-Version: 1.0-5
-Date: 2021-07-27
+Version: 1.0-6
+Date: 2022-09-10
 Title: Collection of Functions for Matrix Calculations
 Author: Frederick Novomestky <fnovomes@poly.edu>
 Maintainer: S. Thomas Kelly <tomkellygenetics@gmail.com>
@@ -16,7 +16,9 @@ Description: A collection of functions to support matrix calculations
         Lancaster, P. (1969) Theory of Matrices. ISBN 978-0124355507.
         Lay, D.C. (1995) Linear Algebra: And Its Applications. ISBN 978-0201845563.
 License: GPL (>= 2)
-Packaged: 2021-07-28 00:59:01 UTC; tom
+BugReports: https://github.com/TomKellyGenetics/matrixcalc/issues
+Packaged: 2022-09-14 20:41:38 UTC; tom
 Repository: CRAN
-Date/Publication: 2021-07-28 08:00:02 UTC
+Date/Publication: 2022-09-14 21:20:02 UTC
+RoxygenNote: 7.1.2
 NeedsCompilation: no

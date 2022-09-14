@@ -14,12 +14,12 @@ hadamard.prod(x, y)
 }
 \details{
   The Hadamard product is an element-by-element product of the two matrices. Let \eqn{{\bf{x}}} 
-  and \eqn{{\bf{x}}} be two \eqn{m \times n} numeric matrices.  The Hadamard product is \eqn{{\bf{x}}\, \circ \,{\bf{y}} = \left[ {\begin{array}{*{20}{c}}
+  and \eqn{{\bf{x}}} be two \eqn{m \times n} numeric matrices.  The Hadamard product is \eqn{{\bf{x}}\, \circ \,{\bf{y}} = \left\lbrack {\begin{array}{cccc}
 {{x_{1,1}}\,{y_{1,1}}}&{{x_{1,2}}\,{y_{1,2}}}& \cdots &{{x_{1,n}}\,{y_{1,n}}}\\
 {{x_{2,1}}\,{y_{121}}}&{{x_{2,2}}\,{y_{2,2}}}& \cdots &{{x_{2,n}}\,{y_{2,n}}}\\
  \cdots & \cdots & \cdots & \cdots \\
 {{x_{m,1}}\,{y_{m,1}}}&{{x_{m,2}}\,{y_{m,2}}}& \cdots &{{x_{m,n}}\,{y_{m,n}}}
-\end{array}} \right]}.
+\end{array}} \right\rbrack}.
   It uses the * operation in R.
 }
 \value{

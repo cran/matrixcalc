@@ -14,9 +14,9 @@ spectral.norm(x)
   Let \eqn{{\bf{x}}} be an \eqn{m \times n} real matrix.  The
   function computes the order \eqn{n} square matrixmatrix \eqn{{\bf{A}} = {\bf{x'}}\;{\bf{x}}}.
   The R function \code{eigen} is applied to this matrix to obtain the vector
-  of eigenvalues \eqn{{\bf{\lambda }} = \left[ {\begin{array}{*{20}c}
+  of eigenvalues \eqn{{\bf{\lambda }} = \left\lbrack {\begin{array}{cccc}
    {\lambda _1 } & {\lambda _2 } &  \cdots  & {\lambda _n }  \\
-\end{array}} \right]}.  By construction the eigenvalues are in descending
+\end{array}} \right\rbrack}.  By construction the eigenvalues are in descending
   order of value so that the largest eigenvalue is \eqn{\lambda _1}.  Then
   the spectral norm is \eqn{\left\| {\bf{x}} \right\|_2  = \sqrt {\lambda _1 }}.
   If \eqn{{\bf{x}}} is a vector, then  \eqn{{\bf{L}}_2  = \sqrt {\bf{A}}} is returned.

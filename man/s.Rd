@@ -17,10 +17,10 @@ x\%s\%y
 }
 \details{
   If either \eqn{\bf{x}} or y is a vector, it is converted to a matrix.  The result
-  is a block diagonal matrix \eqn{\left[ {\begin{array}{*{20}c}
+  is a block diagonal matrix \eqn{\left\lbrack {\begin{array}{cc}
    {\bf{x}} & {\bf{0}}  \\
    {\bf{0}} & {\bf{y}}  \\
-\end{array}} \right]}.
+\end{array}} \right\rbrack}.
 }
 \references{
   Magnus, J. R. and H. Neudecker (1999) \emph{Matrix Differential Calculus with Applications in Statistics and Econometrics},

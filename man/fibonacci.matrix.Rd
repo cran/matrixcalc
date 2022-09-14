@@ -16,7 +16,7 @@ fibonacci.matrix(n)
   set of \eqn{ n + 1} Fibonacci numbers where \eqn{{f_0} = {f_1} = 1}
   and \eqn{{f_j} = {f_{j - 1}} + {f_{j - 2}},\quad 2 \le j \le n}.  The
   order \eqn{n + 1} Fibonacci matrix \eqn{{\bf{F}}} has as typical element
-  \eqn{{F_{i,j}} = \left\{ {\begin{array}{*{20}{c}}
+  \eqn{{F_{i,j}} = \left\{ {\begin{array}{cc}
 {{f_{i - j + 1}}}&{i - j + 1 \ge 0}\\
 0&{i - j + 1 < 0}
 \end{array}} \right.}.

@@ -15,7 +15,7 @@ entrywise.norm(x,p)
   Let \eqn{{\bf{x}}} be an \eqn{m \times n} numeric matrix.
   The formula used to compute the norm is \eqn{\left\| {\bf{x}} \right\|_p  = \left( {\sum\limits_{i = 1}^m {\sum\limits_{j = 1}^n {\left| {x_{i,j} } \right|^p } } } \right)^{{1 \mathord{\left/
  {\vphantom {1 p}} \right.
- \kern-\nulldelimiterspace} p}}}.
+ } p}}}.
 }
 \value{
   A numeric value.

@@ -16,7 +16,7 @@ T.matrices(n)
   Let \eqn{{{\bf{E}}_{i,j}}\;i = 1, \ldots ,n\;;\;j = 1, \ldots ,n} 
   be a representative order \eqn{n} matrix created with function \code{E.matrices}.
   The order \eqn{n} matrix \eqn{{{\bf{T}}_{i,j}}} is defined as follows
-  \eqn{{{\bf{T}}_{i,j}} = \left\{ {\begin{array}{*{20}{c}}
+  \eqn{{{\bf{T}}_{i,j}} = \left\{ {\begin{array}{cc}
 {{{\bf{E}}_{i,j}}}&{i = j}\\
 {{{\bf{E}}_{i,j}} + {{\bf{E}}_{j,i}}}&{i \ne j}
 \end{array}} \right.}

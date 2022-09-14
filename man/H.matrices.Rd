@@ -13,14 +13,14 @@ H.matrices(r, c = r)
   \item{c}{ a positive integer value for an order c identify matrix }
 }
 \details{
-  Let \eqn{{{\bf{I}}_r} = \left[ {\begin{array}{*{20}{c}}
+  Let \eqn{{{\bf{I}}_r} = \lbrack {\begin{array}{cccc}
   {{{\bf{a}}_1}}&{{{\bf{a}}_2}}& \cdots &{{{\bf{a}}_r}}
-  \end{array}} \right]} be the order \eqn{r} identity matrix
+  \end{array}} \rbrack} be the order \eqn{r} identity matrix
   with corresponding unit vectors \eqn{{{{\bf{a}}_i}}} with one in
   its \eqn{i}th position and zeros elsewhere.  
-  Let \eqn{{{\bf{I}}_c} = \left[ {\begin{array}{*{20}{c}}
+  Let \eqn{{{\bf{I}}_c} = \lbrack {\begin{array}{cccc}
   {{{\bf{b}}_1}}&{{{\bf{b}}_2}}& \cdots &{{{\bf{b}}_c}}
-  \end{array}} \right]} be the order \eqn{c} identity matrix
+  \end{array}} \rbrack} be the order \eqn{c} identity matrix
   with corresponding unit vectors \eqn{{{{\bf{b}}_i}}} with one in
   its \eqn{i}th position and zeros elsewhere.
   The \eqn{r \times c} matrix \eqn{{\bf{H}}{}_{i,j} = {{\bf{a}}_i}\;{{\bf{b'}}_j}}

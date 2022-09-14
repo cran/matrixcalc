@@ -15,12 +15,12 @@ direct.prod( x, y )
 \details{
   If either \eqn{\bf{x}} or \eqn{\bf{y}} is a vector, it is converted to a matrix.
   Suppose that \eqn{\bf{x}} is an \eqn{m \times n} matrix and \eqn{\bf{y}} is an \eqn{ p \times q}
-  matrix. Then, the function returns the matrix \eqn{\left[ {\begin{array}{*{20}{c}}
+  matrix. Then, the function returns the matrix \eqn{\left\lbrack {\begin{array}{cccc}
 {{x_{1,1}}\;{\bf{y}}}&{{x_{1,2}}\;{\bf{y}}}& \cdots &{{x_{1,n}}\;{\bf{y}}}\\
 {{x_{2,1}}\;{\bf{y}}}&{{x_{2,2}}\;{\bf{y}}}& \cdots &{{x_{2,n}}\;{\bf{y}}}\\
  \cdots & \cdots & \cdots & \cdots \\
 {{x_{m,1}}\;{\bf{y}}}&{{x_{m,2}}\;{\bf{y}}}& \cdots &{{x_{m,n}}\;{\bf{y}}}
-\end{array}} \right]}.
+\end{array}} \right\rbrack}.
 }
 \value{
   A numeric matrix.

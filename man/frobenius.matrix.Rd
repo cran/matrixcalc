@@ -15,13 +15,13 @@ frobenius.matrix(n)
   The Frobenius matrix is also called the companion matrix.  It arises
   in the solution of systems of linear first order differential equations.
   The formula for the order \eqn{n} Frobenius matrix is \eqn{{\bf{F}} = 
-\left[ {\begin{array}{*{20}{c}}0&0& \cdots &0&{{{\left( { - 1} \right)}^{n - 1}}
-\left( {\begin{array}{*{20}{c}}n\\0\end{array}} \right)}\\1&0& \cdots &0&{{{\left( { - 1} \right)}^{n - 2}}
-\left( {\begin{array}{*{20}{c}}n\\1\end{array}} \right)}\\0&1& \ddots &0&{{{\left( { - 1} \right)}^{n - 3}}
-\left( {\begin{array}{*{20}{c}}n\\2\end{array}} \right)}\\ \vdots & \vdots & \ddots & \vdots & \vdots \\0&0& \cdots &1&{{{\left( { - 1} \right)}^0}
-\left( {\begin{array}{*{20}{c}}n\\{n - 1}\end{array}} 
+\left\lbrack {\begin{array}{ccccc}0&0& \cdots &0&{{{\left( { - 1} \right)}^{n - 1}}
+\left( {\begin{array}{ccccc}n\\0\end{array}} \right)}\\1&0& \cdots &0&{{{\left( { - 1} \right)}^{n - 2}}
+\left( {\begin{array}{ccccc}n\\1\end{array}} \right)}\\0&1& \ddots &0&{{{\left( { - 1} \right)}^{n - 3}}
+\left( {\begin{array}{ccccc}n\\2\end{array}} \right)}\\ \vdots & \vdots & \ddots & \vdots & \vdots \\0&0& \cdots &1&{{{\left( { - 1} \right)}^0}
+\left( {\begin{array}{ccccc}n\\{n - 1}\end{array}} 
 \right)}\end{array}} 
-\right]}.
+\right\rbrack}.
 }
 \value{
   An order \eqn{n} matrix

@@ -15,14 +15,14 @@ creation.matrix(n)
   The order \eqn{n} creation matrix is also called the derivation matrix and is
   used in numerical mathematics and physics. It arises in the solution of linear
   dynamical systems.  The form of the matrix is 
-  \eqn{\left[ {\begin{array}{*{20}{c}}
+  \eqn{\left\lbrack {\begin{array}{cccccc}
 0&0&0& \cdots &0&0\\
 1&0&0& \cdots &0&0\\
 0&2&0& \cdots &0&0\\
 0&0&3& \ddots &0&0\\
  \vdots & \vdots & \vdots & \ddots & \ddots &{}\\
 0&0&0& \cdots &{n - 1}&0
-\end{array}} \right]}.
+\end{array}} \right\rbrack}.
 }
 \value{
   An order \eqn{n} matrix.

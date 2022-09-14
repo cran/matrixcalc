@@ -15,7 +15,7 @@ symmetric.pascal.matrix(n)
   from which you can derive binomial coefficients.  The matrix is an order \eqn{n} symmetric
   matrix with typical element given by \eqn{{S_{i,j}} = {{n!} \mathord{\left/
  {\vphantom {{n!} {\left[ {r!\;\left( {n - r} \right)!} \right]}}} \right.
- \kern-\nulldelimiterspace} {\left[ {r!\;\left( {n - r} \right)!} \right]}}} where
+ } {\left[ {r!\;\left( {n - r} \right)!} \right]}}} where
   \eqn{n = i + j - 2} and \eqn{r = i - 1}.  The binomial coefficients are elegantly recovered from the
   symmetric Pascal matrix by performing an \eqn{LU} decomposition as \eqn{{\bf{S}} = {\bf{L}}\;{\bf{U}}}.
 }  

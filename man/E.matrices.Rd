@@ -14,9 +14,9 @@ E.matrices(n)
 }
 }
 \details{
-  Let \eqn{{{\bf{I}}_n} = \left[ {\begin{array}{*{20}{c}}
+  Let \eqn{{{\bf{I}}_n} = \lbrack {\begin{array}{cccc}
   {{{\bf{e}}_1}}&{{{\bf{e}}_2}}& \cdots &{{{\bf{e}}_n}}
-  \end{array}} \right]} be the order \eqn{n} identity matrix
+  \end{array}} \rbrack}{} be the order \eqn{n} identity matrix
   with corresponding unit vectors \eqn{{{{\bf{e}}_i}}} with one in
   its \eqn{i}th position and zeros elsewhere.  
   The \eqn{n \times n} matrix \eqn{{{\bf{E}}_{i,j}}} is computed
